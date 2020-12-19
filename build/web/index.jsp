@@ -27,10 +27,17 @@
         <%@include file="normal_navbar.jsp"%>
        
         <div class="container-fluid p-0 m-0"  style="background-color:#81c784;"> 
-            <div class="jumbotron banner-background"style="background-color:#fff59d ;">
+            <div class="jumbotron banner-background"style="background-color:#fff59d;">
+                   
                 <div class="container">
-                <h3 class="display-3">Welcome To TechLoji</h3>
-                <h3>TechLoji</h3>
+                    <div class="row">
+                 <h3 class="col-md-7 display-3" style="margin-top:-25px;" >Welcome To TechLoji</h3>
+                    
+                    <div class="col-md-2">
+                 <img src="pics/techlogo.jpg" style="width:160px;height:160px;border-radius:50%;margin-top:-34px;">
+                    </div>
+                    </div>
+                <h3 style="font-size:40px; margin-top:-24px;">TechLoji</h3>
                 <p>Welcome to TechLoji,As know day's without having the knowledge of technology you cannot stand any where.Now days technolgy is became a crucial part of our life
                 So come join us and update your technical skills with us, or you can as us any doubt or question which is on your mind,I and my team help you to find the 
                 solution to your problems and you any even share your skillset here.</p>
@@ -48,7 +55,7 @@
                             <p class="card-text">Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
                                 It is a general-purpose programming language intended to let application developers write once, run anywhere 
                                 (WORA).</p>
-                            <a href="#" class="btn btn-primary">Read Post</a>
+                            <a href="samblog.jsp" class="btn btn-primary">Read Post</a>
                           </div>
                    </div>
              </div>
@@ -58,7 +65,7 @@
                         <h5 class="card-title"><img src ="pics/pic1_1.jpg" class="img-fluid" style="border-radius:25%;"><br>Python Programming Language</h5>
                             <p class="card-text">Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991,
                                 Python's design philosophy emphasizes code readability with its notable use of significant whitespace.</p>
-                            <a href="#" class="btn btn-primary">Read Post</a>
+                            <a href="samblog.jsp" class="btn btn-primary">Read Post</a>
                           </div>
                    </div>
              </div>
@@ -69,7 +76,7 @@
                             <p class="card-text">React is an open-source, front end, JavaScript library for building user interfaces or UI components. 
                                 It is maintained by Facebook and a community of individual developers and companies.
                                 React can be used as a base in the development of single-page or mobile applications.</p>
-                            <a href="#" class="btn btn-primary">Read Post</a>
+                            <a href="samblog.jsp" class="btn btn-primary">Read Post</a>
                           </div>
                    </div>
              </div>
@@ -81,7 +88,7 @@
                             <p class="card-text">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.
                                 By design, C provides constructs that map efficiently to typical machine instructions.
                                  </p>
-                            <a href="#" class="btn btn-primary">Read Post</a>
+                            <a href="samblog.jsp" class="btn btn-primary">Read Post</a>
                           </div>
                    </div>
              </div>
@@ -92,7 +99,7 @@
                             <p class="card-text">Machine learning (ML) is the study of computer algorithms that improve automatically through experience.
                                 It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as "training data".
                                </p>
-                            <a href="#" class="btn btn-primary">Read Post</a>
+                            <a href="samblog.jsp" class="btn btn-primary">Read Post</a>
                           </div>
                    </div>
              </div>
@@ -109,6 +116,9 @@
              </div>
 
         </div>
+             </div>
+        </div>
+        
         
                  
         <%

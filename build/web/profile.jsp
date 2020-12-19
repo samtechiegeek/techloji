@@ -29,8 +29,8 @@
                         
                         <ul class="list-group" ">
                             <li class="list-group-item "style="list-style:none;">
-                                 <img src="pics/list.jpg" style="width:70px;height:70px;border-radius:50%;float:left;">
-                                <a href="#" onclick="getPosts(0)" class="c-link" style="text-decoration:none;font-size:25px;margin-left:15px;padding-top:40px;">All Categories</a>
+                                 <img src="pics/list.jpg" style="width:60px;height:60px;border-radius:50%;float:left;">
+                                <a href="#" onclick="getPosts(0)" class="c-link" style="text-decoration:none;font-size:20px;margin-left:15px;padding-top:40px;">All Categories</a>
                                 
                             </li>
                             <%
@@ -41,8 +41,8 @@
                             %>
                                 
                           <li class="list-group-item " style="list-style:none;">
-                                <img src="pics/<%=c.getCategorypics()%>" style="width:70px;height:70px;border-radius:50%;float:left;">
-                              <a href="#" onclick="getPosts(<%=c.getCid() %>,this)" class="c-link" style="text-decoration:none;font-size:25px;margin-left:15px;padding-top:40px;"> <%= c.getCategory() %></a>
+                                <img src="pics/<%=c.getCategorypics()%>" style="width:60px;height:60px;border-radius:50%;float:left;">
+                              <a href="#" onclick="getPosts(<%=c.getCid() %>,this)" class="c-link" style="text-decoration:none;font-size:20px;margin-left:15px;padding-top:40px;"> <%= c.getCategory() %></a>
                           
                           </li>
                           <% } %>
@@ -51,7 +51,7 @@
                     <!--Second Col posts --->
                     <div class="vl"></div>
                     
-                     <div class="col-md-7" >
+                     <div class="col-md-7 scrollable-content" >
                          <div class="container text-center mt-5" id="loader"><span class="fa fa-refresh fa-3x fa-spin " ></span><br><br><h4>Please Wait...<br>Posts are Loading</h4><br></div>
                           <div class="container-fluid" id="post_container">
                         
@@ -94,19 +94,7 @@
                         getPosts(0);
                   });
                   </script>
-                             <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
+ 
        
           <%@include file="footer.jsp" %>
           <style>
@@ -114,6 +102,13 @@
                   background-color:#c5e1a5;
                   color:white;
               }
+              .scrollable-content {
+  height: 1480px;
+  width:500px;
+  overflow: auto;
+ 
+}
               </style>
+              
     </body>
 </html>
